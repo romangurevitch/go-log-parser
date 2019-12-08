@@ -10,7 +10,9 @@ type CountValue struct {
 }
 type maxValues []CountValue
 
+// Simple array to keep the 'keepAtMost' max count values, the array is sorted by the count value.
 func (m *maxValues) addValue(newValue CountValue, keepAtMost int) {
+	// if the new value is already one of the max values
 	for k, v := range *m {
 		if newValue.value == v.value {
 			(*m)[k] = newValue
