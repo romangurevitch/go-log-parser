@@ -10,7 +10,7 @@ Downloading the project:
 ## Testing the project
 To test the project run:
 
-`go test github.com/romangurevitch/go-log-parser/...`
+`CGO_ENABLED=0 go test github.com/romangurevitch/go-log-parser/...` 
 
 ## Running the project
 `$GOPATH/bin/go-log-parser -h`
