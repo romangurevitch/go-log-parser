@@ -1,0 +1,8 @@
+# Using https://sirkon.github.io/ldetool/ for log parsing
+# See detailed rules syntax at: https://github.com/sirkon/ldetool/blob/master/TOOL_RULES.md
+Log =
+  IPAddress(string) ' '
+  _'[' Date(string) ']'
+  _'"'Method(string) ' '
+  Url(string) ' '
+;
