@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestCompositeAnalyzer_AddEntry(t *testing.T) {
+func TestUrlAnalyzer_AddEntry(t *testing.T) {
 	entries := []struct {
 		log   *httplog.Log
 		count int
