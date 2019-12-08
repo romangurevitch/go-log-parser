@@ -25,9 +25,9 @@ import (
 	"os"
 )
 
-const useHelp = "go-httplog-parser <httplog file path>"
-const shortHelp = "Parse HTTP httplog file"
-const longHelp = `Parse and analise HTTP httplog file, reports: 
+const useHelp = "go-log-parser <log file path>"
+const shortHelp = "Parse HTTP log file"
+const longHelp = `Parse and analyze HTTP log file, reports: 
   Number of unique IP addresses.
   Top 3 most active IP addresses.
   Top 3 most visited URLs.`
