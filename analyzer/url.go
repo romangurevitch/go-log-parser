@@ -6,6 +6,8 @@ import (
 	"strings"
 )
 
+const maxTopUrls = 3
+
 func newUrlAnalyzer() *urlAnalyzer {
 	return &urlAnalyzer{
 		urls:           map[string]int{},
@@ -34,5 +36,5 @@ func (a *urlAnalyzer) Report() string {
 }
 
 func (a *urlAnalyzer) updateTopUrls(url string) {
-	a.topVisitedUrls.addValue(CountValue{a.urls[url], url}, top)
+	a.topVisitedUrls.addValue(CountValue{a.urls[url], url}, maxTopUrls)
 }

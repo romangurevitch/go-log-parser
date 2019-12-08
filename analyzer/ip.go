@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-const top = 3
+const maxTopIps = 3
 
 func newIpAnalyzer() *ipAnalyzer {
 	return &ipAnalyzer{
@@ -39,5 +39,5 @@ func (a *ipAnalyzer) Report() string {
 }
 
 func (a *ipAnalyzer) updateTopIps(ip string) {
-	a.topActiveIps.addValue(CountValue{a.ips[ip], ip}, top)
+	a.topActiveIps.addValue(CountValue{a.ips[ip], ip}, maxTopIps)
 }
